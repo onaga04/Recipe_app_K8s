@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recipe App</title>
+</head>
+<body>
+    <h1>Recipe App</h1>
+    <ul>
+    {% for recipe in recipes %}
+        <li><a href="/recipe/{{ recipe.title|lower }}">{{ recipe.title }}</a></li>
+    {% endfor %}
+    </ul>
+</body>
+</html>
